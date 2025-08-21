@@ -2,16 +2,9 @@ import { Box, Button } from "@mui/material";
 import { useEffect, useState } from "react";
 
 const Users = [
-  { id: 1, name: "田中" },
-  { id: 2, name: "佐藤" },
-  { id: 3, name: "山田" },
-  { id: 4, name: "鈴木" },
-  { id: 5, name: "高橋" },
-  { id: 6, name: "伊藤" },
-  { id: 7, name: "渡辺" },
-  { id: 8, name: "中村" },
-  { id: 9, name: "小林" },
-  { id: 10, name: "加藤" },
+  { id: 1, name: "田中", age: 20 },
+  { id: 2, name: "佐藤", age: 99 },
+  { id: 3, name: "山田", age: 1 },
 ];
 
 function App() {
@@ -33,7 +26,7 @@ function App() {
 
   return (
     <>
-      <h1>ユーザー一覧</h1>
+      <h4>ユーザー一覧</h4>
       <table border="1">
         {" "}
         {/* 簡単な枠線を追加 */}
@@ -41,6 +34,7 @@ function App() {
           <tr>
             <th>ID</th>
             <th>名前</th>
+            <th>年齢</th>
           </tr>
         </thead>
         <tbody>
@@ -49,6 +43,7 @@ function App() {
             <tr key={user.id}>
               <td>{user.id}</td>
               <td>{user.name}</td>
+              <td>{user.age}</td>
             </tr>
           ))}
         </tbody>
