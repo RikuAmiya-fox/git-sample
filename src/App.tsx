@@ -26,7 +26,8 @@ function App() {
 
   return (
     <>
-      <h4>ユーザー一覧</h4>
+      <h1>GitHubDesktopテスト用</h1>
+      <h1>ユーザー一覧</h1>
       <table border="1">
         {" "}
         {/* 簡単な枠線を追加 */}
